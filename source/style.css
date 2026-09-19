@@ -1,63 +1,45 @@
-/* Element Selector - Đổi màu nền trang web */
+/* Thiết lập màu nền cho toàn bộ trang web */
 body {
-    background-color: #f0f4f8;
+    background-color: #eef2f5;
     font-family: Arial, sans-serif;
-    padding: 30px;
     text-align: center;
+    padding: 30px;
+    margin: 0;
 }
 
-/* Element Selector - Căn giữa và định dạng tiêu đề h1 */
+/* Định dạng tiêu đề và đoạn văn chính */
 h1 {
     color: #2c3e50;
-    margin-bottom: 20px;
 }
 
-/* ID Selector - Định dạng đoạn văn mô tả bản thân */
-#about-me {
+p {
     color: #555;
-    font-size: 16px;
+}
+
+/* Thiết lập khối div: Ảnh nền và căn giữa nội dung */
+.important-box {
+    width: 80%;
     max-width: 600px;
-    margin: 0 auto 25px auto;
-}
-
-/* Class Selector - Định dạng danh sách sở thích */
-.hobby-list {
-    list-style-type: square;
-    display: inline-block;
-    text-align: left;
-    padding-left: 20px;
-}
-
-/* Class Selectors - Định dạng các mục sở thích với màu sắc khác nhau */
-.item-1 {
-    color: #e74c3c; /* Đỏ */
-    font-weight: bold;
-}
-
-.item-2 {
-    color: #27ae60; /* Xanh lá */
-    font-weight: bold;
-}
-
-.item-3 {
-    color: #2980b9; /* Xanh dương */
-    font-weight: bold;
-}
-
-/* Class & Pseudo-class Selector - Định dạng nút bấm và hiệu ứng Hover */
-.btn-click {
-    display: block;
-    margin: 30px auto 0 auto;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 30px auto; /* Căn giữa khối div ra giữa màn hình */
+    padding: 40px 20px;
+    
+    /* Thiết lập ảnh nền */
+    background-image: url("https://via.placeholder.com/600x300/3498db/ffffff?text=Background+Image");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Trang trí thêm cho khung */
     color: white;
-    background-color: #3498db;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center; /* Căn giữa văn bản bên trong div */
 }
 
-.btn-click:hover {
-    background-color: #1d6fa5; /* Đổi màu khi rê chuột vào */
+.important-box h2 {
+    margin-top: 0;
+}
+
+.important-box p {
+    color: #f0f0f0;
 }
