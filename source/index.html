@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cá Nhân</title>
+    <title>Nhúng CSS vào trang HTML</title>
+    
+    <!-- Phần 3: External CSS (Kết nối file style.css) -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Phần 2: Internal CSS -->
+    <style>
+        .internal-title {
+            color: green;
+        }
+        .internal-text {
+            color: purple;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Chào mừng đến với trang web cá nhân của tôi</h1>
-    </header>
 
-    <section class="profile">
-        <img src="https://via.placeholder.com/150" alt="Ảnh đại diện" class="avatar">
-        <p>Xin chào! Tôi là <strong>Nguyễn Văn A</strong>, một lập trình viên yêu thích công nghệ.</p>
-    </section>
+    <!-- Phần 1: Inline CSS -->
+    <h1 style="color: red;">Tiêu đề sử dụng Inline CSS (Màu đỏ)</h1>
+    <p style="color: blue;">Đoạn văn sử dụng Inline CSS (Màu xanh dương).</p>
 
-    <section class="hobbies">
-        <h2>Sở thích</h2>
-        <ul>
-            <li>Đọc sách</li>
-            <li>Chơi thể thao</li>
-            <li>Lập trình</li>
-            <li>Du lịch</li>
-        </ul>
-    </section>
+    <hr>
 
-    <section class="goals">
-        <h2>Mục tiêu học tập</h2>
-        <p>Tôi muốn trở thành một lập trình viên chuyên nghiệp, xây dựng các sản phẩm hữu ích.</p>
-    </section>
+    <!-- Phần 2: Internal CSS -->
+    <h1 class="internal-title">Tiêu đề sử dụng Internal CSS (Màu xanh lá)</h1>
+    <p class="internal-text">Đoạn văn sử dụng Internal CSS (Màu tím).</p>
 
-    <footer>
-        <h2>Thông tin liên hệ</h2>
-        <table>
-            <tr>
-                <th>Email</th>
-                <td>nguyenvana@example.com</td>
-            </tr>
-            <tr>
-                <th>Facebook</th>
-                <td><a href="#">facebook.com/nguyenvana</a></td>
-            </tr>
-        </table>
-    </footer>
+    <hr>
+
+    <!-- Phần 3: External CSS -->
+    <h1 class="external-title">Tiêu đề sử dụng External CSS (Màu cam)</h1>
+    <p class="external-text">Đoạn văn sử dụng External CSS (Màu xám/Teal).</p>
+
 </body>
 </html>
