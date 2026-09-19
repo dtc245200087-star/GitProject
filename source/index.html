@@ -2,72 +2,98 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Lịch họp công ty</title>
+        <title>Danh sách trong CSS</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
                 margin: 20px;
+                line-height: 1.6;
             }
-            table {
-                width: 100%;
-                max-width: 700px;
-                border-collapse: collapse;
-                margin-top: 15px;
+
+            /* 1. Thay đổi kiểu đánh dấu list-style-type */
+            ul.a {
+                list-style-type: circle;
             }
-            th, td {
-                border: 1px solid #333;
-                padding: 10px;
-                text-align: center;
+            ul.b {
+                list-style-type: square;
             }
-            th {
-                background-color: #007bff;
-                color: white;
+            ol.c {
+                list-style-type: upper-roman;
             }
-            .content-col {
-                text-align: left;
+            ol.d {
+                list-style-type: lower-alpha;
+            }
+
+            /* 2. Vị trí đánh dấu list-style-position */
+            ul.inside {
+                list-style-position: inside;
+                background-color: #f1f1f1;
+            }
+            ul.outside {
+                list-style-position: outside;
+                background-color: #e2e2e2;
+            }
+
+            /* 3. Thuộc tính rút gọn list-style & định màu sắc */
+            ol.custom-list {
+                background: #ffe6e6;
+                padding: 20px;
+            }
+            ol.custom-list li {
+                background: #fff0f0;
+                color: #cc0000;
+                padding: 5px;
+                margin: 5px 0;
+                list-style: square inside;
             }
         </style>
     </head>
     <body>
 
-        <h1>Lịch họp công ty</h1>
+        <h2>1. Đánh dấu mục danh sách khác nhau (list-style-type)</h2>
+        <p>Danh sách không thứ tự (ul):</p>
+        <ul class="a">
+            <li>Mục hình tròn rỗng (circle)</li>
+            <li>Mục hình tròn rỗng</li>
+        </ul>
+        <ul class="b">
+            <li>Mục hình vuông (square)</li>
+            <li>Mục hình vuông</li>
+        </ul>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ngày</th>
-                    <th>Giờ</th>
-                    <th>Nội dung cuộc họp</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <!-- Gộp 2 hàng cùng ngày Thứ 2 -->
-                    <td rowspan="2">Thứ 2 (22/09)</td>
-                    <td>08:00 - 09:00</td>
-                    <td class="content-col">Họp giao ban đầu tuần</td>
-                </tr>
-                <tr>
-                    <td>10:00 - 11:30</td>
-                    <td class="content-col">Báo cáo tiến độ dự án Alpha</td>
-                </tr>
-                <tr>
-                    <!-- Gộp 2 hàng cùng ngày Thứ 4 -->
-                    <td rowspan="2">Thứ 4 (24/09)</td>
-                    <!-- Gộp 2 cột giờ cho cuộc họp kéo dài cả sáng -->
-                    <td colspan="2" class="content-col">08:00 - 12:00: Hội thảo chiến lược kinh doanh Quý IV (Cả buổi sáng)</td>
-                </tr>
-                <tr>
-                    <td>14:00 - 15:30</td>
-                    <td class="content-col">Phỏng vấn ứng viên Dev Senior</td>
-                </tr>
-                <tr>
-                    <td>Thứ 6 (26/09)</td>
-                    <td>15:00 - 16:30</td>
-                    <td class="content-col">Tổng kết tuần và Review Sprint</td>
-                </tr>
-            </tbody>
-        </table>
+        <p>Danh sách có thứ tự (ol):</p>
+        <ol class="c">
+            <li>Số La Mã hoa (upper-roman)</li>
+            <li>Số La Mã hoa</li>
+        </ol>
+        <ol class="d">
+            <li>Chữ cái thường (lower-alpha)</li>
+            <li>Chữ cái thường</li>
+        </ol>
+
+        <hr>
+
+        <h2>2. Vị trí dấu đầu dòng (list-style-position)</h2>
+        <p>Inside (Dấu đầu dòng nằm bên trong khối):</p>
+        <ul class="inside">
+            <li>Mục 1</li>
+            <li>Mục 2</li>
+        </ul>
+
+        <p>Outside (Dấu đầu dòng nằm bên ngoài khối - mặc định):</p>
+        <ul class="outside">
+            <li>Mục 1</li>
+            <li>Mục 2</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. Định kiểu danh sách kết hợp màu sắc</h2>
+        <ol class="custom-list">
+            <li>Phần tử danh sách 1</li>
+            <li>Phần tử danh sách 2</li>
+            <li>Phần tử danh sách 3</li>
+        </ol>
 
     </body>
 </html>
