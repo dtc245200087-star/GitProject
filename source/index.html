@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục với display</title>
+    <title>Bố cục với Float và Overflow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Bố cục trang web với display</h1>
+    <h1>Bố cục trang với float và overflow</h1>
     
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Giới thiệu</a>
-        <a href="#">Dịch vụ</a>
-        <a href="#">Liên hệ</a>
-    </nav>
+    <div class="container">
+        <div class="left-column">Nội dung bên trái</div>
+        <div class="right-column">Nội dung bên phải</div>
+    </div>
     
-    <section>
-        <div class="box">Cột 1</div>
-        <div class="box">Cột 2</div>
-        <div class="box">Cột 3</div>
-    </section>
-    
-    <footer>
-        <p>Bản quyền &copy; 2026</p>
-    </footer>
+    <div class="overflow-box">
+        Đây là nội dung rất dài mà chúng ta kiểm tra overflow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nunc in mauris pharetra, a ultricies justo fermentum.
+    </div>
 
 </body>
 </html>
