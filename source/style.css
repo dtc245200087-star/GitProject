@@ -4,31 +4,80 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 100%;
-    overflow: hidden;
+/* Khung chính nằm giữa màn hình */
+#main {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
-.left-column {
-    width: 60%;
+/* Phần Đầu trang */
+#head {
+    height: 100px;
+    background-color: #e0e0e0;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Phần Liên kết đầu trang */
+#head-link {
+    height: 35px;
+    background-color: #d0d0d0;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+/* Cột Trái */
+#left {
+    width: 200px;
+    min-height: 400px;
     float: left;
-    background-color: lightblue;
-    padding: 20px;
+    background-color: #e8e8e8;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.right-column {
-    width: 38%;
+/* Nội dung Chính giữa */
+#content {
+    width: 550px;
+    min-height: 400px;
+    float: left;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Cột Phải */
+#right {
+    width: 210px;
+    min-height: 400px;
     float: right;
-    background-color: lightgreen;
-    padding: 20px;
+    background-color: #e8e8e8;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-/* Xử lý float bằng pseudo-element clearfix */
-.container::after {
-    content: "";
-    display: block;
+/* Phần Chân trang (dùng clear: both để xuống hàng chuẩn xác) */
+#footer {
     clear: both;
+    height: 60px;
+    background-color: #d0d0d0;
+    border: 1px solid #b2b2b2;
+    text-align: center;
+    line-height: 60px;
 }
