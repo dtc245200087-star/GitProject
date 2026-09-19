@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Danh Sách Sản Phẩm</title>
+        <title>Lịch họp công ty</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -10,55 +10,61 @@
             }
             table {
                 width: 100%;
-                max-width: 600px;
+                max-width: 700px;
                 border-collapse: collapse;
                 margin-top: 15px;
             }
             th, td {
-                border: 1px solid #dddddd;
-                text-align: left;
+                border: 1px solid #333;
                 padding: 10px;
+                text-align: center;
             }
             th {
-                background-color: #f2f2f2;
+                background-color: #007bff;
+                color: white;
             }
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
+            .content-col {
+                text-align: left;
             }
         </style>
     </head>
     <body>
 
-        <h1>Danh sách sản phẩm</h1>
+        <h1>Lịch họp công ty</h1>
 
         <table>
             <thead>
                 <tr>
-                    <th>Tên sản phẩm</th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Nội dung cuộc họp</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Điện thoại iPhone 15 Pro</td>
-                    <td>28.990.000 VNĐ</td>
-                    <td>15</td>
+                    <!-- Gộp 2 hàng cùng ngày Thứ 2 -->
+                    <td rowspan="2">Thứ 2 (22/09)</td>
+                    <td>08:00 - 09:00</td>
+                    <td class="content-col">Họp giao ban đầu tuần</td>
                 </tr>
                 <tr>
-                    <td>Laptop MacBook Air M2</td>
-                    <td>24.500.000 VNĐ</td>
-                    <td>8</td>
+                    <td>10:00 - 11:30</td>
+                    <td class="content-col">Báo cáo tiến độ dự án Alpha</td>
                 </tr>
                 <tr>
-                    <td>Tai nghe AirPods Pro 2</td>
-                    <td>5.690.000 VNĐ</td>
-                    <td>25</td>
+                    <!-- Gộp 2 hàng cùng ngày Thứ 4 -->
+                    <td rowspan="2">Thứ 4 (24/09)</td>
+                    <!-- Gộp 2 cột giờ cho cuộc họp kéo dài cả sáng -->
+                    <td colspan="2" class="content-col">08:00 - 12:00: Hội thảo chiến lược kinh doanh Quý IV (Cả buổi sáng)</td>
                 </tr>
                 <tr>
-                    <td>Đồng hồ Apple Watch Series 9</td>
-                    <td>10.290.000 VNĐ</td>
-                    <td>12</td>
+                    <td>14:00 - 15:30</td>
+                    <td class="content-col">Phỏng vấn ứng viên Dev Senior</td>
+                </tr>
+                <tr>
+                    <td>Thứ 6 (26/09)</td>
+                    <td>15:00 - 16:30</td>
+                    <td class="content-col">Tổng kết tuần và Review Sprint</td>
                 </tr>
             </tbody>
         </table>
