@@ -3,38 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhúng CSS vào trang HTML</title>
-    
-    <!-- Phần 3: External CSS (Kết nối file style.css) -->
+    <title>Sử dụng bộ chọn CSS</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Phần 2: Internal CSS -->
-    <style>
-        .internal-title {
-            color: green;
-        }
-        .internal-text {
-            color: purple;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Phần 1: Inline CSS -->
-    <h1 style="color: red;">Tiêu đề sử dụng Inline CSS (Màu đỏ)</h1>
-    <p style="color: blue;">Đoạn văn sử dụng Inline CSS (Màu xanh dương).</p>
+    <!-- Element selector -->
+    <h1>Trang web của tôi</h1>
 
-    <hr>
+    <!-- ID selector -->
+    <p id="about-me">Tôi là một học viên Frontend đang học định dạng giao diện bằng các bộ chọn CSS.</p>
 
-    <!-- Phần 2: Internal CSS -->
-    <h1 class="internal-title">Tiêu đề sử dụng Internal CSS (Màu xanh lá)</h1>
-    <p class="internal-text">Đoạn văn sử dụng Internal CSS (Màu tím).</p>
+    <!-- Class & Grouping selectors -->
+    <h2>Sở thích của tôi</h2>
+    <ul class="hobby-list">
+        <li class="hobby-item item-1">Lập trình web</li>
+        <li class="hobby-item item-2">Đọc sách công nghệ</li>
+        <li class="hobby-item item-3">Nghe nhạc thư giãn</li>
+    </ul>
 
-    <hr>
-
-    <!-- Phần 3: External CSS -->
-    <h1 class="external-title">Tiêu đề sử dụng External CSS (Màu cam)</h1>
-    <p class="external-text">Đoạn văn sử dụng External CSS (Màu xám/Teal).</p>
+    <!-- Pseudo-class selector (:hover) -->
+    <button class="btn-click">Nhấn vào đây</button>
 
 </body>
 </html>
