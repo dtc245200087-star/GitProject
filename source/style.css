@@ -1,45 +1,37 @@
-/* Thiết lập màu nền cho toàn bộ trang web */
 body {
-    background-color: #eef2f5;
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 30px;
-    margin: 0;
+    padding: 20px;
 }
 
-/* Định dạng tiêu đề và đoạn văn chính */
-h1 {
-    color: #2c3e50;
-}
-
-p {
-    color: #555;
-}
-
-/* Thiết lập khối div: Ảnh nền và căn giữa nội dung */
-.important-box {
-    width: 80%;
-    max-width: 600px;
-    margin: 30px auto; /* Căn giữa khối div ra giữa màn hình */
-    padding: 40px 20px;
-    
-    /* Thiết lập ảnh nền */
-    background-image: url("https://via.placeholder.com/600x300/3498db/ffffff?text=Background+Image");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* Trang trí thêm cho khung */
+/* Quy tắc chung áp dụng cho tất cả các card */
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    margin: 20px;
     color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: center; /* Căn giữa văn bản bên trong div */
 }
 
-.important-box h2 {
-    margin-top: 0;
+.card h3, .card p {
+    margin: 0 0 10px 0;
 }
 
-.important-box p {
-    color: #f0f0f0;
+/* Thẻ 1: Sử dụng content-box và nền màu xanh lá */
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+/* Thẻ 2: Sử dụng border-box và nền màu vàng */
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+    color: #333; /* Chữ màu tối hơn để dễ đọc trên nền vàng */
+}
+
+/* Thẻ 3: Sử dụng border-box và nền màu đỏ */
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
 }
