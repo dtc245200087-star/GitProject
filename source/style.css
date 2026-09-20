@@ -1,91 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Tùy chỉnh thêm CSS cá nhân nếu cần (ghi đè lên Bootstrap) */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
-/* Container chính dàn trang theo chiều dọc bằng Flexbox */
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header & Footer */
-.header, .footer {
-    background-color: #2196F3;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Navigation bar sắp xếp ngang các liên kết */
-.nav {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+.navbar-brand {
     font-weight: bold;
-}
-
-.nav a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-/* Main Container: Sắp xếp Main Content & Sidebar nằm ngang trên Desktop */
-.main-container {
-    display: flex;
-    flex: 1; /* Tự động lấp đầy khoảng trống còn lại */
-    gap: 15px;
-    padding: 15px;
-}
-
-.content {
-    flex: 3; /* Chiếm 3 phần chiều rộng */
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.sidebar {
-    flex: 1; /* Chiếm 1 phần chiều rộng */
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* ======================================================
-   RESPONSIVE CHO MOBILE (max-width: 768px)
-   ====================================================== */
-@media screen and (max-width: 768px) {
-    /* Chuyển Main Content & Sidebar thành hàng dọc */
-    .main-container {
-        flex-direction: column;
-    }
-
-    /* Chuyển Navigation thành cột trên thiết bị di động */
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav a {
-        width: 100%;
-        text-align: center;
-        padding: 8px 0;
-    }
+    letter-spacing: 0.5px;
 }
