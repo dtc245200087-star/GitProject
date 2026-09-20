@@ -1,9 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.carousel-item img {
-    height: 420px;
-    object-fit: cover;
+.max-w-lg {
+    max-width: 500px;
 }
