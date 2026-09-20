@@ -1,50 +1,56 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f4f4f4;
 }
 
-h2, h3 {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-h3 {
-    margin-top: 25px;
-}
-
-/* Flex Container */
-.flex-container {
+/* Container chính bao phủ toàn bộ màn hình */
+.container {
     display: flex;
-    background-color: #2196F3;
-    padding: 10px;
-    border-radius: 5px;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Flex Item */
-.flex-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 18px;
+.header, .footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-weight: bold;
-    margin: 5px;
-    width: 200px;
+    padding: 20px;
 }
 
-/* Ví dụ 1: Xếp theo hàng ngang (row) và cho phép rớt dòng (wrap) */
-.example-1 {
-    flex-flow: row wrap;
+.nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
-/* Ví dụ 2: Xếp theo cột dọc (column) và không rớt dòng (nowrap) */
-.example-2 {
-    flex-flow: column nowrap;
+/* Khu vực nội dung chính chứa Main Content và Sidebar */
+.main-container {
+    display: flex;
+    flex: 1; /* Chiếm toàn bộ khoảng trống còn lại */
+}
+
+.content {
+    flex: 3; /* Chiếm 3/4 chiều rộng khu vực chính */
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1; /* Chiếm 1/4 chiều rộng khu vực chính */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* ======================================================
+   RESPONSIVE CHO MOBILE (max-width: 768px)
+   ====================================================== */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Chuyển main content và sidebar thành hàng dọc trên màn hình nhỏ */
+    }
 }
