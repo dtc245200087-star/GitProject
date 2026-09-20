@@ -15,11 +15,13 @@ h2 {
     color: #333;
 }
 
-/* Tạo lưới 3 cột */
+/* Tạo Grid Container */
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    /* Đặt khoảng cách giữa các hàng là 30px theo đề bài */
+    grid-row-gap: 30px; 
+    row-gap: 30px; /* Cú pháp chuẩn hiện đại */
     background-color: #2196F3;
     padding: 10px;
     border-radius: 5px;
@@ -29,12 +31,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
-}
-
-/* Sử dụng grid-column-start để dịch chuyển Item 1 bắt đầu từ cột 2 */
-.item1 {
-    grid-column-start: 2;
 }
