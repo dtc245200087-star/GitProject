@@ -10,54 +10,6 @@ body {
     background-color: #f4f4f4;
 }
 
-h2, h3 {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-h3 {
-    margin-top: 25px;
-}
-
-/* Flex Container */
-.flex-container {
-    display: flex;
-    background-color: #2196F3;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Các flex item */
-.flex-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    width: 200px;
-    margin: 10px;
-    padding: 20px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Áp dụng flex-wrap */
-.flex-wrap {
-    flex-wrap: wrap; /* Cho phép rớt dòng khi vượt quá chiều rộng container */
-}
-
-.flex-nowrap {
-    flex-wrap: nowrap; /* Co ép tất cả phần tử nằm trên 1 dòng */
-}a* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
 h2 {
     margin-bottom: 20px;
     color: #333;
@@ -71,26 +23,20 @@ h2 {
     border-radius: 5px;
 }
 
-/* Kiểu dáng chung cho Flex Item */
+/* Kiểu dáng chung cho các Flex Item */
 .flex-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
     margin: 5px;
+    flex-grow: 1; /* Mặc định các div giãn nở đều nhau */
 }
 
-/* Áp dụng flex-basis cho các phần tử */
-.item1 {
-    flex-basis: 100px;
-}
-
-.item2 {
-    flex-basis: 200px;
-}
-
-.item3 {
-    flex-basis: 300px;
+/* Div thứ 2 áp dụng flex-grow lớn hơn để mở rộng rộng hơn các div còn lại */
+.item-grow {
+    flex-grow: 8;
+    background-color: #ffeb3b; /* Tô màu khác để dễ nhận biết */
 }
