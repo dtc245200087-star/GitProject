@@ -10,40 +10,31 @@ body {
     background-color: #f4f4f4;
 }
 
-h2, h3 {
-    margin-bottom: 15px;
+h2 {
+    margin-bottom: 20px;
     color: #333;
 }
 
-h3 {
-    margin-top: 25px;
-}
-
-/* Khung chứa Grid chung */
+/* Tạo lưới 3 cột */
 .grid-container {
     display: grid;
+    grid-template-columns: auto auto auto;
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Các ô Grid */
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
 }
 
-/* Ví dụ 1: 4 cột với kích thước tùy chỉnh */
-.grid-example-1 {
-    grid-template-columns: 100px auto 150px auto;
-}
-
-/* Ví dụ 2: 3 cột chia tỉ lệ 1fr - 2fr - 1fr */
-.grid-example-2 {
-    grid-template-columns: 1fr 2fr 1fr;
+/* Sử dụng grid-column-start để dịch chuyển Item 1 bắt đầu từ cột 2 */
+.item1 {
+    grid-column-start: 2;
 }
