@@ -3,61 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Web Design</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Phân Tích & Xây Dựng Cấu Trúc Website Template</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Thanh điều hướng cố định -->
+    <!-- 1. HEADER SECTION -->
+    <header class="header">
+        <h1>TechAcademy Website Template</h1>
+        <p>Hệ thống học lập trình Web Frontend chuyên nghiệp</p>
+    </header>
+
+    <!-- 2. NAVIGATION MENU -->
     <nav class="navbar">
         <ul>
             <li><a href="#">Trang chủ</a></li>
-            <li><a href="#services">Dịch vụ</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#analysis">Bài phân tích</a></li>
+            <li><a href="#content">Dịch vụ</a></li>
+            <li><a href="#screenshot">Trang web gốc</a></li>
         </ul>
     </nav>
 
-    <!-- Header với nền ảnh và hiệu ứng blur overlay -->
-    <header class="header">
-        <div class="header-content">
-            <h1>Creative Web Design</h1>
-            <p>Thiết kế website chuyên nghiệp - Hiện đại - Ấn tượng</p>
-            <a href="#services" class="btn">Khám phá ngay</a>
-        </div>
-    </header>
+    <!-- MAIN CONTAINER -->
+    <main class="container">
 
-    <!-- Content Section với Card Layout (CSS Grid) -->
-    <section class="content" id="services">
-        <h2>Dịch vụ của chúng tôi</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="https://picsum.photos/id/1/400/250" alt="Dịch vụ 1">
-                <h3>Thiết kế Website</h3>
-                <p>• Chúng tôi tạo ra những trang web chuyên nghiệp, thân thiện với người dùng.</p>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/160/400/250" alt="Dịch vụ 2">
-                <h3>SEO & Marketing</h3>
-                <p>• Giúp website của bạn đạt thứ hạng cao trên công cụ tìm kiếm.</p>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/180/400/250" alt="Dịch vụ 3">
-                <h3>Hỗ trợ 24/7</h3>
-                <p>• Đội ngũ hỗ trợ luôn sẵn sàng giúp bạn giải quyết mọi vấn đề.</p>
-            </div>
-        </div>
-    </section>
+        <!-- 3. BÁO CÁO PHÂN TÍCH CẤU TRÚC -->
+        <section class="analysis-section" id="analysis">
+            <h2>Báo Cáo Phân Tích Cấu Trúc Website Mẫu</h2>
+            <p>Trang web được thiết kế theo bố cục 4 phần tiêu chuẩn chuẩn UI/UX:</p>
+            <ul>
+                <li><strong>Header:</strong> Đặt ở đầu trang, chứa tên thương hiệu và thông điệp chính nhằm nhận diện trang web.</li>
+                <li><strong>Navigation Menu:</strong> Đặt ngay bên dưới Header để giúp người dùng điều hướng nhanh đến các phần nội dung.</li>
+                <li><strong>Content Section:</strong> Sử dụng CSS Flexbox/Grid sắp xếp nội dung dạng thẻ (Card Layout) rõ ràng, trực quan.</li>
+                <li><strong>Footer:</strong> Đặt cuối trang, dùng tone màu tối để chứa thông tin bản quyền và liên hệ.</li>
+            </ul>
+        </section>
 
-    <!-- Footer với 2 cột (Flexbox) -->
+        <!-- 4. CONTENT SECTION (DỊCH VỤ / NỘI DUNG CHÍNH) -->
+        <section class="content" id="content">
+            <h2>Nội Dung Dịch Vụ</h2>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/1/300/180" alt="HTML5 & CSS3">
+                    <h3>Thẻ & Cấu trúc HTML</h3>
+                    <p>Nắm vững cấu trúc semantic tags, thẻ form, table và các quy chuẩn SEO cơ bản.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/160/300/180" alt="CSS Layout">
+                    <h3>Bố cục CSS Layout</h3>
+                    <p>Sử dụng CSS Flexbox và Grid để chia bố cục trang web linh hoạt, hiện đại.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/180/300/180" alt="Bootstrap">
+                    <h3>Bootstrap Framework</h3>
+                    <p>Tối ưu thời gian xây dựng giao diện Responsive tương thích mọi thiết bị.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ẢNH CHỤP MÀN HÌNH TRANG WEB GỐC -->
+        <section class="screenshot-section" id="screenshot">
+            <div class="img-wrapper">
+                <!-- Lưu ảnh chụp màn hình vào thư mục dự án với tên "website-goc.png" -->
+                <img src="website-goc.png" alt="Ảnh chụp màn hình trang web gốc phân tích" onerror="this.src='https://via.placeholder.com/900x500/1e293b/ffffff?text=Chua+co+file+website-goc.png+trong+thu+muc'">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 6. FOOTER SECTION -->
     <footer class="footer">
-        <div class="footer-left">
-            <p>• &copy; 2026 Creative Web. All rights reserved.</p>
-        </div>
-        <div class="footer-right">
-            <p>• Theo dõi chúng tôi:</p>
-            <p>• Facebook | Twitter | LinkedIn</p>
-        </div>
+        <p>&copy; 2026 TechAcademy. All rights reserved.</p>
     </footer>
 
 </body>
