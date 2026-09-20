@@ -3,43 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo layout với RWD</title>
+    <title>Responsive Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>Header / Logo</h1>
-        </div>
+    <h2>Responsive Image Gallery</h2>
+    <p class="sub-title">Resize the browser window to see the effect.</p>
 
-        <!-- Navigation Bar -->
-        <div class="topnav">
-            <a href="#">Trang chủ</a>
-            <a href="#">Giới thiệu</a>
-            <a href="#">Dịch vụ</a>
-            <a href="#">Liên hệ</a>
-        </div>
-
-        <!-- Main Layout (Content + Sidebar) -->
-        <div class="main-content">
-            <div class="column left">
-                <h2>Cột trái (Nội dung chính)</h2>
-                <p>Nội dung chính của trang web sẽ hiển thị ở đây. Trên màn hình máy tính, cột này nằm cạnh cột phải. Trên màn hình di động, hai cột sẽ tự động xếp chồng lên nhau.</p>
-            </div>
-            
-            <div class="column right">
-                <h2>Cột phải (Sidebar)</h2>
-                <p>Thông tin bổ sung, liên kết phụ hoặc quảng cáo.</p>
+    <div class="responsive-gallery">
+        <div class="gallery-item">
+            <div class="content">
+                <img src="https://cdn.pixabay.com/photo/2016/01/02/18/39/puppy-1118584_1280.jpg" alt="Cún 1">
+                <div class="desc">Chú cún dễ thương 1</div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2026 Bản quyền thuộc về Website</p>
+        <div class="gallery-item">
+            <div class="content">
+                <img src="http://thucanhviet.com/wp-content/uploads/2018/03/Pom-2-thang-mat-cuc-xinh.jpg" alt="Cún 2">
+                <div class="desc">Chú cún Phốc Sóc 2</div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="content">
+                <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/05/anh-cho-53.jpg" alt="Cún 3">
+                <div class="desc">Chú cún đáng yêu 3</div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="content">
+                <img src="https://cdn.pixabay.com/photo/2016/01/02/18/39/puppy-1118584_1280.jpg" alt="Cún 4">
+                <div class="desc">Chú cún dễ thương 4</div>
+            </div>
         </div>
     </div>
+
+    <p class="note-text">
+        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+    </p>
 
 </body>
 </html>

@@ -6,95 +6,71 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
     padding: 20px;
+    background-color: #fff; /* Nền trắng như mẫu */
+    color: #000;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.sub-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Gallery Container */
+.responsive-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px; /* Bù trừ padding item */
+}
+
+/* Khung chứa từng ảnh (Mặc định 4 ảnh/dòng) */
+.gallery-item {
+    width: 25%;
+    padding: 6px;
+}
+
+/* Thẻ border bao ngoài */
+.content {
     border: 1px solid #ccc;
 }
 
-/* Header */
-.header {
-    background-color: #333;
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-.topnav {
-    background-color: #444;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
+/* Ảnh tự co giãn */
+.content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-}
-
-/* Base columns styling */
-.column {
-    padding: 20px;
-    background-color: #e9e9e9;
-    border-radius: 4px;
-}
-
-
-.column.left {
-    flex: 7;
-}
-
-.column.right {
-    flex: 3;
-}
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+/* Phần chữ mô tả dưới ảnh */
+.desc {
     padding: 15px;
+    text-align: center;
+    font-size: 15px;
 }
 
-@media screen and (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-    
-    .column.left, 
-    .column.right {
-        width: 100%;
+/* Đoạn văn bản dưới gallery */
+.note-text {
+    margin-top: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+@media screen and (max-width: 700px) {
+    .gallery-item {
+        width: 50%; /* 2 ảnh/dòng */
     }
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        padding: 5px;
-    }
-    
-    .topnav a {
-        float: none;
-        width: 100%;
-        text-align: left;
+    .gallery-item {
+        width: 100%; /* 1 ảnh/dòng */
     }
 }
