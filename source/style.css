@@ -1,18 +1,16 @@
+/* Tùy chỉnh thêm CSS nhẹ cho trang */
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Hiệu ứng hover nhẹ cho các Card dịch vụ */
-.card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+main {
+    flex: 1;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Cuộn mượt khi click liên kết menu */
-html {
-    scroll-behavior: smooth;
+.navbar-brand {
+    font-weight: bold;
 }
