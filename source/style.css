@@ -1,106 +1,100 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #333;
-    padding: 15px 20px;
     color: white;
+    padding: 30px;
+    text-align: center;
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
+.topnav {
+    background-color: #444;
+    overflow: hidden;
 }
 
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    color: white;
 }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #f4f4f4;
-}
-
-.hero h1 {
-    margin-bottom: 10px;
-}
-
-.hero p {
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.services {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.services h2 {
-    margin-bottom: 20px;
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.service {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-.testimonials {
-    text-align: center;
-    padding: 50px 20px;
+.topnav a:hover {
     background-color: #ddd;
+    color: black;
 }
 
-.testimonial {
-    margin-top: 15px;
-    font-style: italic;
-}
 
-.footer {
-    text-align: center;
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
+    gap: 20px;
+}
+
+/* Base columns styling */
+.column {
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
+
+
+.column.left {
+    flex: 7;
+}
+
+.column.right {
+    flex: 3;
+}
+
+/* Footer */
+.footer {
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 15px;
 }
 
-/* Responsive với Media Queries */
-@media (max-width: 768px) {
-    .nav ul {
-        display: none;
-    }
-
-    .service-container {
+@media screen and (max-width: 768px) {
+    .main-content {
         flex-direction: column;
+    }
+    
+    .column.left, 
+    .column.right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 5px;
+    }
+    
+    .topnav a {
+        float: none;
+        width: 100%;
+        text-align: left;
     }
 }
