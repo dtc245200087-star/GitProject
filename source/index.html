@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành flex-grow Property</title>
+    <title>Thực hành flex-flow Property</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>Thực hành Thuộc tính flex-grow</h2>
+    <h2>Thực hành Thuộc tính flex-flow</h2>
 
-    <!-- Vùng chứa Flex Container chứa 5 div -->
-    <div class="flex-container">
-        <div class="flex-item">1</div>
-        <div class="flex-item item-grow">2 (flex-grow: 8)</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
-        <div class="flex-item">5</div>
+    <h3>1. flex-flow: row wrap</h3>
+    <div class="flex-container example-1">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <h3>2. flex-flow: column nowrap</h3>
+    <div class="flex-container example-2">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
     </div>
 
 </body>
