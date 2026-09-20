@@ -3,163 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 15 Pro - Apple</title>
-    <!-- Nhúng Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Nhúng Font Awesome Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Simple Web Development Template</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-white">
+<body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
-        <div class="container">
-            <a class="navbar-brand fs-4" href="#"><i class="fab fa-apple"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link text-white-50" href="#">Store</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Mac</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">iPad</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white fw-bold" href="#">iPhone</a></li>
-                    <li class="nav-item"><a class="nav-link text-white-50" href="#">Watch</a></li>
-                    <li class="nav-item"><a class="nav-link text-white-50" href="#">Support</a></li>
-                </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="#" class="text-white-50"><i class="fas fa-search"></i></a>
-                    <a href="#" class="text-white-50"><i class="fas fa-shopping-bag"></i></a>
-                </div>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="https://via.placeholder.com/180x50/333/fff?text=Logo" alt="Logo">
             </div>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#java">Java</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button class="btn btn-sm">Search</button>
         </div>
     </nav>
 
-    <!-- HERO SECTION (Sử dụng Flexbox & Margin/Padding) -->
-    <section class="py-5 text-center bg-black">
-        <div class="container py-5">
-            <p class="text-warning fw-bold fs-5 mb-2">Mới</p>
-            <h1 class="display-3 fw-bold mb-3">iPhone 15 Pro</h1>
-            <p class="fs-4 text-secondary mb-4">Thiết kế Titanium. Chip A17 Pro siêu mạnh mẽ.</p>
-            <div class="d-flex justify-content-center align-items-center gap-3 mb-5">
-                <a href="#buy" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">Mua ngay</a>
-                <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">Tìm hiểu thêm <i class="fas fa-chevron-right ms-1"></i></a>
-            </div>
-            <div class="d-flex justify-content-center">
-                <img src="https://picsum.photos/id/160/1000/500" class="img-fluid rounded-4 shadow-lg" alt="iPhone 15 Pro Hero">
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURE HIGHLIGHTS (Sử dụng Bootstrap Grid & Flexbox) -->
-    <section class="py-5 my-5">
-        <div class="container">
-            <h2 class="text-center display-5 fw-bold mb-5">Khám phá công nghệ đỉnh cao.</h2>
-            
-            <div class="row g-4">
-                <!-- Feature 1 -->
-                <div class="col-md-4">
-                    <div class="bg-secondary bg-opacity-10 p-4 rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary border-opacity-25">
-                        <div>
-                            <i class="fas fa-microchip fa-3x text-info mb-3"></i>
-                            <h4 class="fw-bold mb-2">Chip A17 Pro</h4>
-                            <p class="text-secondary">Hiệu năng đồ họa đỉnh cao chưa từng có trên điện thoại thông minh.</p>
-                        </div>
-                        <span class="fs-2 fw-bold text-info">GPU 6 lõi</span>
-                    </div>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="col-md-4">
-                    <div class="bg-secondary bg-opacity-10 p-4 rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary border-opacity-25">
-                        <div>
-                            <i class="fas fa-camera fa-3x text-warning mb-3"></i>
-                            <h4 class="fw-bold mb-2">Hệ thống Camera 48MP</h4>
-                            <p class="text-secondary">Nhiều tiêu cự chuẩn. Bắt trọn khoảnh khắc chân thực với độ chi tiết kinh ngạc.</p>
-                        </div>
-                        <span class="fs-2 fw-bold text-warning">Zoom quang 5x</span>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="col-md-4">
-                    <div class="bg-secondary bg-opacity-10 p-4 rounded-4 h-100 d-flex flex-column justify-content-between border border-secondary border-opacity-25">
-                        <div>
-                            <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
-                            <h4 class="fw-bold mb-2">Khung Titanium</h4>
-                            <p class="text-secondary">Chất liệu Titanium chuẩn hàng không vũ trụ, cực nhẹ và siêu bền bỉ.</p>
-                        </div>
-                        <span class="fs-2 fw-bold text-success">Siêu nhẹ</span>
-                    </div>
+    <!-- SECTION 1: WEB TECHNOLOGY -->
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">Web Technology</h1>
+                <p class="text-small">
+                    HTML stands for HyperText Markup Language. It is used to design
+                    web pages using a markup language. HTML is the combination of Hypertext
+                    and Markup language. Hypertext defines the link between the web
+                    pages. A markup language is used to define the text document within
+                    tag which defines the structure of web pages.
+                </p>
+                <div>
+                    <button class="btn">Learn More</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCT SPECIFICATIONS (Align-items & Justify-content) -->
-    <section class="py-5 bg-black" id="buy">
-        <div class="container py-4">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://picsum.photos/id/96/600/450" class="img-fluid rounded-4 shadow" alt="iPhone Specifications">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-6 fw-bold mb-4">Thông số kỹ thuật nổi bật</h2>
-                    
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="me-3 p-3 bg-secondary bg-opacity-25 rounded-circle text-primary">
-                            <i class="fas fa-mobile-alt fa-2x"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Màn hình Super Retina XDR</h5>
-                            <p class="text-secondary mb-0">Kích thước 6.1 inch hoặc 6.7 inch với công nghệ ProMotion 120Hz và Always-On display.</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="me-3 p-3 bg-secondary bg-opacity-25 rounded-circle text-primary">
-                            <i class="fas fa-bolt fa-2x"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Nút Hành Động (Action Button)</h5>
-                            <p class="text-secondary mb-0">Tùy chỉnh lối tắt nhanh đến tính năng yêu thích của bạn chỉ bằng một cú bấm.</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 p-3 bg-secondary bg-opacity-25 rounded-circle text-primary">
-                            <i class="fas fa-plug fa-2x"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Cổng kết nối USB-C</h5>
-                            <p class="text-secondary mb-0">Hỗ trợ USB 3 cho tốc độ truyền dữ liệu nhanh hơn gấp 20 lần.</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <button class="btn btn-primary btn-lg rounded-pill px-5 fw-bold">Đặt Mua Ngay - Từ 28.999.000đ</button>
-                    </div>
+    <!-- SECTION 2: C PROGRAMMING -->
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">C Programming</h1>
+                <p class="text-small">
+                    C is a procedural programming language. It was initially developed by Dennis
+                    Ritchie as a system programming language to write operating system.
+                    The main features of C language include low-level access to memory, simple set
+                    of keywords, and clean style.
+                </p>
+                <div>
+                    <button class="btn">Explore C</button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: JAVA WITH IMAGE -->
+    <section class="section" id="java">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java Programming</h1>
+            <p class="sectionSubTag text-small">
+                Java has been one of the most popular programming languages for many years.
+                Java is Object Oriented. The Java codes are first compiled into byte code.
+                Then the byte code is run on Java Virtual Machine (JVM) regardless of the
+                underlying architecture.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/250x180/007bff/ffffff?text=Java+Laptop" alt="laptop image">
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-4 bg-black border-top border-secondary border-opacity-25 text-secondary fs-7">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-                <p class="mb-0">Bản quyền &copy; 2026 Apple Inc. Mọi quyền được bảo lưu.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-secondary text-decoration-none">Chính sách bảo mật</a>
-                    <a href="#" class="text-secondary text-decoration-none">Điều khoản sử dụng</a>
-                    <a href="#" class="text-secondary text-decoration-none">Bán hàng và hoàn tiền</a>
-                </div>
-            </div>
-        </div>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2026 - All rights reserved
+        </p>
     </footer>
 
-    <!-- Nhúng Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

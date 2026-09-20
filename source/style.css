@@ -1,7 +1,172 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.fs-7 {
-    font-size: 0.85rem;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 40px;
+}
+
+.background {
+    background: #111;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 140px;
+    border-radius: 8px;
+    display: block;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #00d2d3;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search {
+    padding: 6px 12px;
+    font-size: 15px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 8px 20px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    margin: 0;
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.btn-sm:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* SECTIONS */
+.firstsection {
+    background-color: #1e7e34;
+    min-height: 380px;
+}
+
+.secondsection {
+    background-color: #0056b3;
+    min-height: 380px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.firstHalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.text-small {
+    font-size: 17px;
+}
+
+/* CONTENT SECTION WITH IMAGE */
+.section {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding-right: 40px;
+}
+
+.thumbnail img {
+    width: 260px;
+    border: 2px solid #333;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.text-footer {
+    text-align: center;
+    padding: 25px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 15px;
 }
