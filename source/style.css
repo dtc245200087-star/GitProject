@@ -6,51 +6,86 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-/* Container chính bao phủ toàn bộ màn hình */
+/* Container chính dàn trang theo chiều dọc bằng Flexbox */
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Header & Footer */
 .header, .footer {
-    background-color: #333;
+    background-color: #2196F3;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+/* Navigation bar sắp xếp ngang các liên kết */
 .nav {
-    background-color: #444;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav a {
     color: white;
-    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Main Container: Sắp xếp Main Content & Sidebar nằm ngang trên Desktop */
+.main-container {
+    display: flex;
+    flex: 1; /* Tự động lấp đầy khoảng trống còn lại */
+    gap: 15px;
     padding: 15px;
 }
 
-/* Khu vực nội dung chính chứa Main Content và Sidebar */
-.main-container {
-    display: flex;
-    flex: 1; /* Chiếm toàn bộ khoảng trống còn lại */
-}
-
 .content {
-    flex: 3; /* Chiếm 3/4 chiều rộng khu vực chính */
+    flex: 3; /* Chiếm 3 phần chiều rộng */
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .sidebar {
-    flex: 1; /* Chiếm 1/4 chiều rộng khu vực chính */
-    background-color: #f4f4f4;
+    flex: 1; /* Chiếm 1 phần chiều rộng */
+    background-color: #e0e0e0;
     padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* ======================================================
    RESPONSIVE CHO MOBILE (max-width: 768px)
    ====================================================== */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Chuyển Main Content & Sidebar thành hàng dọc */
     .main-container {
-        flex-direction: column; /* Chuyển main content và sidebar thành hàng dọc trên màn hình nhỏ */
+        flex-direction: column;
+    }
+
+    /* Chuyển Navigation thành cột trên thiết bị di động */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
     }
 }
