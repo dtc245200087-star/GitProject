@@ -1,4 +1,3 @@
-/* Tùy chỉnh thêm CSS cá nhân nếu cần (ghi đè lên Bootstrap) */
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #f8f9fa;
@@ -6,5 +5,13 @@ body {
 
 .navbar-brand {
     font-weight: bold;
-    letter-spacing: 0.5px;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
