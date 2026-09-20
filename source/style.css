@@ -19,7 +19,11 @@ h2 {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    
+    /* Cú pháp grid-gap: row-gap column-gap; */
+    grid-gap: 20px 50px; 
+    gap: 20px 50px; /* Cú pháp chuẩn hiện đại */
+    
     background-color: #2196F3;
     padding: 10px;
     border-radius: 5px;
@@ -32,9 +36,4 @@ h2 {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
-}
-
-/* Sử dụng cú pháp gộp grid-row: start / end */
-.item1 {
-    grid-row: 1 / 3; /* Chiếm từ row line 1 đến row line 3 (kéo dài qua 2 hàng) */
 }
