@@ -1,85 +1,49 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
-/* Container chính sử dụng CSS Grid */
-.grid-container {
-    display: grid;
-    gap: 10px;
+h2, h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+/* Flex Container */
+.flex-container {
+    display: flex;
+    background-color: #2196F3;
     padding: 10px;
-    min-height: 100vh;
-    
-    /* Cấu trúc Grid cho Desktop (Ngang) */
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: 
-        "header  header"
-        "nav     nav"
-        "main    sidebar"
-        "footer  footer";
+    border-radius: 5px;
 }
 
-/* Định kiểu cho từng phần tử */
-.header {
-    grid-area: header;
-    background-color: #2196F3;
-    color: white;
+/* Các flex item */
+.flex-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 200px;
+    margin: 10px;
     padding: 20px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav {
-    grid-area: nav;
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-.main {
-    grid-area: main;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    background-color: #e0e0e0;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #2196F3;
-    color: white;
-    padding: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
 }
 
-/* ======================================================
-   RESPONSIVE CHO MOBILE (max-width: 768px)
-   ====================================================== */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto 1fr auto;
-        grid-template-areas: 
-            "header"
-            "nav"
-            "main"
-            "sidebar"
-            "footer";
-    }
+/* Áp dụng flex-wrap */
+.flex-wrap {
+    flex-wrap: wrap; /* Cho phép rớt dòng khi vượt quá chiều rộng container */
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap; /* Co ép tất cả phần tử nằm trên 1 dòng */
 }
