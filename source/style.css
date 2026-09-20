@@ -1,9 +1,8 @@
-/* Tùy chỉnh thêm khoảng cách và kiểu dáng nếu cần */
 body {
     font-family: Arial, sans-serif;
 }
 
-.carousel-item img {
-    max-height: 400px;
-    object-fit: cover;
+.row > div {
+    min-height: 120px;
+    border: 1px solid #dee2e6;
 }
