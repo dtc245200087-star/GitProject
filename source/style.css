@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
-.row > div {
-    min-height: 120px;
-    border: 1px solid #dee2e6;
+.carousel-item img {
+    height: 420px;
+    object-fit: cover;
 }
