@@ -1,15 +1,21 @@
-/* Tùy chỉnh bổ sung cho Form Đăng ký */
-body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f4f6f9;
+/* Tùy chỉnh Hero Section có ảnh nền gradient */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
 }
 
-/* Đổi màu focus nhẹ nhàng cho form control */
-.form-control:focus, .form-select:focus, .form-check-input:focus {
-    border-color: #86b7fe;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+/* Hiệu ứng hover cho thẻ tính năng */
+#features .border {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card {
-    border-radius: 1rem;
+#features .border:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Cuộn mượt khi bấm link */
+html {
+    scroll-behavior: smooth;
 }
