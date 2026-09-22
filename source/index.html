@@ -1,83 +1,188 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phân Tích & Xây Dựng Cấu Trúc Website Template</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu Sách - Book Overview</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- 1. HEADER SECTION -->
-    <header class="header">
-        <h1>TechAcademy Website Template</h1>
-        <p>Hệ thống học lập trình Web Frontend chuyên nghiệp</p>
-    </header>
-
-    <!-- 2. NAVIGATION MENU -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#analysis">Bài phân tích</a></li>
-            <li><a href="#content">Dịch vụ</a></li>
-            <li><a href="#screenshot">Trang web gốc</a></li>
+  <!-- 1. Header & Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">BOOKLAND</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#author">Author</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reader's Say</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- MAIN CONTAINER -->
-    <main class="container">
+  <!-- 1. Book Overview (Hero Section) -->
+  <header id="overview" class="bg-light py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h1 class="display-4 fw-bold">Khám Phá Tri Thức Mới</h1>
+          <p class="lead text-muted">Cuốn sách giúp bạn thay đổi tư duy lập trình và làm chủ công nghệ HTML, CSS, SASS & Bootstrap hiệu quả.</p>
+          <a href="#download" class="btn btn-primary btn-lg me-2">Tải Ngay</a>
+          <a href="#prices" class="btn btn-outline-secondary btn-lg">Mua Sách</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://via.placeholder.com/350x500" class="img-fluid rounded shadow" alt="Book Cover">
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <!-- 3. BÁO CÁO PHÂN TÍCH CẤU TRÚC -->
-        <section class="analysis-section" id="analysis">
-            <h2>Báo Cáo Phân Tích Cấu Trúc Website Mẫu</h2>
-            <p>Trang web được thiết kế theo bố cục 4 phần tiêu chuẩn chuẩn UI/UX:</p>
-            <ul>
-                <li><strong>Header:</strong> Đặt ở đầu trang, chứa tên thương hiệu và thông điệp chính nhằm nhận diện trang web.</li>
-                <li><strong>Navigation Menu:</strong> Đặt ngay bên dưới Header để giúp người dùng điều hướng nhanh đến các phần nội dung.</li>
-                <li><strong>Content Section:</strong> Sử dụng CSS Flexbox/Grid sắp xếp nội dung dạng thẻ (Card Layout) rõ ràng, trực quan.</li>
-                <li><strong>Footer:</strong> Đặt cuối trang, dùng tone màu tối để chứa thông tin bản quyền và liên hệ.</li>
+  <!-- 2. Author -->
+  <section id="author" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Về Tác Giả</h2>
+        <p class="text-muted">Người đồng hành cùng sự nghiệp lập trình của bạn</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="https://via.placeholder.com/200" class="rounded-circle img-fluid shadow" alt="Author">
+        </div>
+        <div class="col-md-8">
+          <h3>CodeGym Mentor</h3>
+          <p class="lead">Chuyên gia Frontend với hơn 10 năm kinh nghiệm trong ngành công nghiệp phần mềm.</p>
+          <p>Cuốn sách này tổng hợp tất cả thực tiễn tốt nhất, mẹo tối ưu code và các cấu trúc chuẩn 7-1 SASS giúp bạn xây dựng trang web chuyên nghiệp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Features -->
+  <section id="features" class="bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nội Dung Nổi Bật</h2>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm">
+            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+            <h4 class="card-title">Chuẩn CSS & SASS</h4>
+            <p class="card-text">Hướng dẫn áp dụng kiến thức 7-1 SASS architecture chuẩn doanh nghiệp.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm">
+            <i class="bi bi-phone display-4 text-primary mb-3"></i>
+            <h4 class="card-title">Responsive Design</h4>
+            <p class="card-text">Tối ưu hiển thị hoàn hảo trên mọi thiết bị từ Mobile, Tablet đến Desktop.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm">
+            <i class="bi bi-lightning-charge display-4 text-primary mb-3"></i>
+            <h4 class="card-title">Thực Hành Dán Code</h4>
+            <p class="card-text">Hàng chục bài tập thực tế giúp bạn nhanh chóng làm chủ Frontend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Prices -->
+  <section id="prices" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Bảng Giá Sách</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5 col-lg-4">
+          <div class="card text-center p-4 shadow-sm border-0">
+            <h3 class="fw-bold">E-Book</h3>
+            <h1 class="display-5 text-primary my-3">199.000đ</h1>
+            <ul class="list-unstyled mb-4">
+              <li>File PDF / EPUB chất lượng cao</li>
+              <li>Mã nguồn thực hành đi kèm</li>
+              <li>Hỗ trợ qua Discord/Group</li>
             </ul>
-        </section>
+            <button class="btn btn-outline-primary btn-lg">Mua E-Book</button>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="card text-center p-4 shadow border-primary">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-3">Phổ biến</span>
+            <h3 class="fw-bold">Sách In + E-Book</h3>
+            <h1 class="display-5 text-primary my-3">350.000đ</h1>
+            <ul class="list-unstyled mb-4">
+              <li>Sách bìa cứng giao tận nhà</li>
+              <li>Trọn bộ E-Book & Mã nguồn</li>
+              <li>Bookmark & Quà tặng kèm</li>
+            </ul>
+            <button class="btn btn-primary btn-lg">Đặt Sách In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- 4. CONTENT SECTION (DỊCH VỤ / NỘI DUNG CHÍNH) -->
-        <section class="content" id="content">
-            <h2>Nội Dung Dịch Vụ</h2>
-            <div class="card-container">
-                <!-- Card 1 -->
-                <div class="card">
-                    <img src="https://picsum.photos/id/1/300/180" alt="HTML5 & CSS3">
-                    <h3>Thẻ & Cấu trúc HTML</h3>
-                    <p>Nắm vững cấu trúc semantic tags, thẻ form, table và các quy chuẩn SEO cơ bản.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="card">
-                    <img src="https://picsum.photos/id/160/300/180" alt="CSS Layout">
-                    <h3>Bố cục CSS Layout</h3>
-                    <p>Sử dụng CSS Flexbox và Grid để chia bố cục trang web linh hoạt, hiện đại.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="card">
-                    <img src="https://picsum.photos/id/180/300/180" alt="Bootstrap">
-                    <h3>Bootstrap Framework</h3>
-                    <p>Tối ưu thời gian xây dựng giao diện Responsive tương thích mọi thiết bị.</p>
-                </div>
-            </div>
-        </section>
+  <!-- 5. Download -->
+  <section id="download" class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Tải Bản Đọc Thử Miễn Phí</h2>
+      <p class="lead mb-4">Nhận ngay Chương 1 và 2 hoàn toàn miễn phí qua Email của bạn.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control form-control-lg" placeholder="Nhập Email của bạn...">
+            <button class="btn btn-dark btn-lg" type="button">Tải Ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- 5. ẢNH CHỤP MÀN HÌNH TRANG WEB GỐC -->
-        <section class="screenshot-section" id="screenshot">
-            <div class="img-wrapper">
-                <!-- Lưu ảnh chụp màn hình vào thư mục dự án với tên "website-goc.png" -->
-                <img src="website-goc.png" alt="Ảnh chụp màn hình trang web gốc phân tích" onerror="this.src='https://via.placeholder.com/900x500/1e293b/ffffff?text=Chua+co+file+website-goc.png+trong+thu+muc'">
-            </div>
-        </section>
+  <!-- 6. Reader's Say -->
+  <section id="reviews" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Độc Giả Nói Gì?</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 border-0 shadow-sm">
+            <p class="fst-italic">"Cuốn sách rất hay, giải thích dễ hiểu về Bootstrap và SASS. Tôi đã tự tay làm được Landing Page chỉ sau 3 ngày đọc."</p>
+            <h5 class="fw-bold mb-0">- Nguyễn Văn A (Học viên CodeGym)</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 border-0 shadow-sm">
+            <p class="fst-italic">"Cấu trúc dự án theo SASS 7-1 cực kỳ hữu ích cho công việc thực tế của mình tại công ty."</p>
+            <h5 class="fw-bold mb-0">- Trần Thị B (Frontend Developer)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- 7. Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 BookLand. All rights reserved. Designed for CodeGym Project.</p>
+    </div>
+  </footer>
 
-    <!-- 6. FOOTER SECTION -->
-    <footer class="footer">
-        <p>&copy; 2026 TechAcademy. All rights reserved.</p>
-    </footer>
-
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
