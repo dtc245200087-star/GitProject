@@ -1,10 +1,54 @@
 .container {
-  @include grid-container;
+  max-width: $container-width;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -($gutter / 2);
-  margin-right: -($gutter / 2);
+/* Header Section */
+.header {
+  background-color: $header-bg;
+  color: $white;
+  text-align: center;
+  padding: 40px 20px;
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Navigation Section */
+.navbar {
+  background-color: $dark-bg;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  ul {
+    @include flex-center;
+    list-style: none;
+
+    li a {
+      display: block;
+      color: $white;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $dark-bg;
+      }
+    }
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: $dark-bg;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
