@@ -1,3 +1,17 @@
+.col {
+  flex: 1;
+  padding: 0 ($gutter / 2);
+
+  @include respond-to("mobile") {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+}
+
 .card {
-  @include box-style;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
 }
